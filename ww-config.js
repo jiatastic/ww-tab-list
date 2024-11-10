@@ -1,34 +1,18 @@
 export default {
     editor: {
         label: {
-            en: 'Tab list',
+            en: 'Rich Text Editor',
         },
-        icon: 'slider',         // 📛 TODO
+        icon: 'edit',
         bubble: {
-            icon: 'slider',     // 📛 TODO
+            icon: 'edit', 
         },
         customSettingsPropertiesOrder: [],
     },
     properties: {
-        tabTriggerElements: {
-            hidden: true,
-            defaultValue: [
-                {
-                    isWwObject: true,
-                    type: 'tab-trigger',
-                    content: { name: 'tab1' },
-                },
-                {
-                    isWwObject: true,
-                    type: 'tab-trigger',
-                    content: { name: 'tab2' },
-                },
-                {
-                    isWwObject: true,
-                    type: 'tab-trigger',
-                    content: { name: 'tab3' },
-                }
-            ],
+        editorContent: {
+            hidden: false,
+            defaultValue: '<p>Start writing...</p>',
         },
     },
 };
